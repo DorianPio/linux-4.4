@@ -539,6 +539,7 @@
 		pinctrl_hog: hoggrp {
 			fsl,pins = <
 				MX7D_PAD_UART3_CTS_B__GPIO4_IO7		0x15	/*LTE_PWR_EN*/
+				MX7D_PAD_UART3_TX_DATA__GPIO4_IO5	0x15	/*LTE_W_DISABLED*/
 				MX7D_PAD_ECSPI2_SS0__GPIO4_IO23		0x34	/* bt reg on */
 				MX7D_PAD_ECSPI2_SCLK__GPIO4_IO20	0x59	/* WL_REG_ON */
 			>;

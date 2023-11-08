@@ -1,0 +1,39 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [4.4.302-cip78-rt45-moxa1] - 2023-10-31
+### Changed
+* Pickup the commits modified by MOXA from `4.4.302-cip70-rt40/master`.
+* ls102xa: remove DECNET CONFIG because it is an obsolete network protocol and has been orphaned in kernel since 2010.
+* usb: dwc3: remove the call trace of USBx_GFLADJ because GFLADJ_30MHZ of value should keep to 0x20.
+
+## [4.4.302-cip70-rt40-moxa5] - 2022-11-30
+### Changed
+* ARM: ls102xa_defconfig: set moxa smart IO driver as module.
+
+## [4.4.302-cip70-rt40-moxa4] - 2022-11-25
+### Fixed
+* ARM: dts: ls1021a: fix uc-8410a PHY LED no blinking in link status.
+* ARM: dts: ls1021a: fix da-662c PHY LED no blinking in link status.
+
+## [4.4.302-cip70-rt40-moxa3] - 2022-11-21
+### Fixed
+* mmc: sdio_cis: backport definition of CISTPL_SDIO_STD(0x91).
+* imx7d: build MOXA UPORT 11x0 Serial Driver.
+
+## [4.4.302-cip70-rt40-moxa2] - 2022-11-09
+### Fixed
+* ls102xa: backport CPU frequency scaling driver for Freescale QorIQ SoC for missing CPU frequency in `lscpu`.
+* rtc: ds1374: wdt: Fix stop/start ioctl always returning -EINVAL.
+
+## [4.4.302-cip70-rt40-moxa1] - 2022-10-14
+### Changed
+* Pickup the commits modified by MOXA from `4.4.285-cip63-rt36/master` and skip reverted commits.
+* ls102xa: remove the conflict commit about MU-860 driver and update new MSB Linux kernel 4.x.x driver.
+* imx7d: set MMC_CACHE_FLUSH_TIMEOUT_MS as default timeout in mmc_switch().
+* imx7d: mmc: sdhci-of-esdhc: fixup PRESENT_STATE read.

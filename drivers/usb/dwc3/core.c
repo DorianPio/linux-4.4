@@ -162,8 +162,7 @@ static void dwc3_frame_length_adjustment(struct dwc3 *dwc, u32 fladj)
 
 	reg = dwc3_readl(dwc->regs, DWC3_GFLADJ);
 	dft = reg & DWC3_GFLADJ_30MHZ_MASK;
-	if (!dev_WARN_ONCE(dwc->dev, dft == fladj,
-	    "request value same as default, ignoring\n")) {
+	if (dft != fladj) {
 		reg &= ~DWC3_GFLADJ_30MHZ_MASK;
 		reg |= DWC3_GFLADJ_30MHZ_SDBND_SEL | fladj;
 		dwc3_writel(dwc->regs, DWC3_GFLADJ, reg);

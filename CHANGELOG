@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.4.302-cip78-rt45-moxa2] - 2023-11-20
+### Changed
+* ARM: dts: export GPIO for LTE_W_DISABLED for UC-8200 series
+
 ## [4.4.302-cip78-rt45-moxa1] - 2023-10-31
 ### Changed
 * Pickup the commits modified by MOXA from `4.4.302-cip70-rt40/master`.

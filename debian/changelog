@@ -1,0 +1,37 @@
+am335x-linux-4.4 (4.4.302-cip78-rt45-moxa2+deb9) stretch; urgency=medium
+
+  [Changed]
+  * Pickup the commits modified by MOXA from `4.4.302-cip70-rt40/master`.
+  * ARM: dts: export GPIO for LTE_W_DISABLED for UC-8200 series.
+
+  [Removed]
+  * ls102xa: remove DECNET CONFIG because it is an obsolete network protocol and has been orphaned in kernel since 2010.
+  * usb: dwc3: remove the call trace of USBx_GFLADJ because GFLADJ_30MHZ of value should keep to 0x20.
+
+ -- Jason CS Chen <jasoncs.chen@moxa.com>  Thu, 23 Nov 2023 00:11:18 -0500
+
+am335x-linux-4.4 (4.4.302-cip70-rt40-moxa5+deb9) stretch; urgency=medium
+
+  [Changed]
+  * ARM: ls102xa_defconfig: set moxa smart IO driver as module.
+
+  [Fixed]
+  * ARM: dts: ls1021a: fix uc-8410a and da-662c PHY LED no blinking in link status.
+
+ -- TungYu TY Yang <TungyuTY.Yang@moxa.com>  Mon, 05 Dec 2022 10:17:52 +0800
+
+am335x-linux-4.4 (4.4.302-cip70-rt40-moxa3+deb9) stretch; urgency=medium
+
+  [Changed]
+  * Pickup the commits modified by MOXA from `4.4.285-cip63-rt36/master` and skip reverted commits.
+  * ls102xa: remove the conflict commit about MU-860 driver and update new MSB Linux kernel 4.x.x driver.
+  * imx7d: set MMC_CACHE_FLUSH_TIMEOUT_MS as default timeout in mmc_switch().
+  * imx7d: mmc: sdhci-of-esdhc: fixup PRESENT_STATE read.
+
+  [Fixed]
+  * mmc: sdio_cis: backport definition of CISTPL_SDIO_STD(0x91).
+  * imx7d: build MOXA UPORT 11x0 Serial Driver.
+  * rtc: ds1374: wdt: Fix stop/start ioctl always returning -EINVAL.
+  * ls102xa: backport CPU frequency scaling driver for Freescale QorIQ SoC for missing CPU frequency in `lscpu`.
+
+ -- TungYu TY Yang <TungyuTY.Yang@moxa.com>  Wed, 02 Nov 2022 13:42:59 +0800

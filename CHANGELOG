@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.4.302-cip78-rt45-moxa3] - 2023-12-12
+### Security
+* This revision adds security updates to fix following issues:
+  CVE-2023-34319, CVE-2023-31436, CVE-2023-3772, CVE-2023-1989   
+
 ## [4.4.302-cip78-rt45-moxa2] - 2023-11-20
 ### Changed
 * ARM: dts: export GPIO for LTE_W_DISABLED for UC-8200 series

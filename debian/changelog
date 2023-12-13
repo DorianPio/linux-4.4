@@ -1,3 +1,11 @@
+am335x-linux-4.4 (4.4.302-cip78-rt45-moxa3+deb9) stretch; urgency=medium
+
+  [Security]
+  * This revision adds security updates to fix following issues:
+  CVE-2023-34319, CVE-2023-31436, CVE-2023-3772, CVE-2023-1989
+
+ -- Jason CS Chen <jasoncs.chen@moxa.com>  Tue, 12 Dec 2023 01:05:31 -0500
+
 am335x-linux-4.4 (4.4.302-cip78-rt45-moxa2+deb9) stretch; urgency=medium
 
   [Changed]

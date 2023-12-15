@@ -1,3 +1,17 @@
+ls102xa-linux-4.4 (4.4.302-cip78-rt45-moxa5+deb9) stretch; urgency=medium
+
+  [Added]
+  * ARM: ls102xa_defconfig: add CONFIG_CRYPTO_RSA
+  * ARM: ls102xa_defconfig: add CONFIG_NETFILTER_XT_MATCH_IPVS
+  * ARM: ls102xa_defconfig: remove CONFIG_WATCHDOG_NOWAYOUT according to MIL1
+    spec. Users should enable it in /lib/modprobe.d/watchdog.conf
+
+  [Security]
+  * This revision adds security updates to fix following issues:
+    CVE-2023-34319, CVE-2023-31436, CVE-2023-3772, CVE-2023-1989
+
+ -- Sin-Ru Lu <ChrisSR_Lu@moxa.com>  Fri, 15 Dec 2023 14:51:05 +0800
+
 ls102xa-linux-4.4 (4.4.302-cip78-rt45-moxa2+deb9) stretch; urgency=medium
 
   [Changed]

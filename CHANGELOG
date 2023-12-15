@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.4.302-cip78-rt45-moxa4] - 2023-12-13
+### Added
+* ARM: ls102xa_defconfig: add CONFIG_CRYPTO_RSA and CONFIG_NETFILTER_XT_MATCH_IPVS
+* ARM: ls102xa_defconfig: remove CONFIG_WATCHDOG_NOWAYOUT according to MIL1 spec. Users should
+  enable it in /lib/modprobe.d/watchdog.conf
+
 ## [4.4.302-cip78-rt45-moxa3] - 2023-12-12
 ### Security
 * This revision adds security updates to fix following issues:

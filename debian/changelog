@@ -1,0 +1,271 @@
+imx7-linux-4.4 (4.4.302-cip78-rt45-moxa5+deb9) stretch; urgency=medium
+
+  [Security]
+  * This revision adds security updates to fix following issues:
+    CVE-2023-34319, CVE-2023-31436, CVE-2023-3772, CVE-2023-1989
+
+  [Added]
+  * ARM: ls102xa_defconfig: add CONFIG_CRYPTO_RSA and CONFIG_NETFILTER_XT_MATCH_IPVS
+  * ARM: ls102xa_defconfig: remove CONFIG_WATCHDOG_NOWAYOUT according to MIL1 spec. Users should
+    enable it in /lib/modprobe.d/watchdog.conf
+
+ -- James KH Tsang <JamesKH.Tsang@moxa.com>  Wed, 20 Dec 2023 11:01:59 +0800
+
+imx7-linux-4.4 (4.4.302-cip70-rt40-moxa3+deb9) stretch; urgency=medium
+
+  [Changed]
+  * Pickup the commits modified by MOXA from `4.4.285-cip63-rt36/master` and
+    skip reverted commits.
+  * ls102xa: remove the conflict commit about MU-860 driver and update new MSB
+    Linux kernel 4.x.x driver.
+  * imx7d: set MMC_CACHE_FLUSH_TIMEOUT_MS as default timeout in mmc_switch().
+  * imx7d: mmc: sdhci-of-esdhc: fixup PRESENT_STATE read.
+
+  [Fixed]
+  * ls102xa: backport CPU frequency scaling driver for Freescale QorIQ SoC for
+    missing CPU frequency in `lscpu`.
+  * rtc: ds1374: wdt: Fix stop/start ioctl always returning -EINVAL.
+  * mmc: sdio_cis: backport definition of CISTPL_SDIO_STD(0x91).
+  * imx7d: build MOXA UPORT 11x0 Serial Driver.
+
+ -- SeanHC Lin <SeanHC.Lin@moxa.com>  Tue, 22 Nov 2022 15:25:57 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa23+deb9) stretch; urgency=medium
+
+  [Fixed]
+  * Use polling instead of waiting for a sufficient delay to reduce the
+    latency of the hs400_to_hs200() function and resolve the unbootable
+    issue on some devices.
+
+ -- SeanHC Lin <SeanHC.Lin@moxa.com>  Tue, 19 Jul 2022 05:01:23 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa22+deb9) stretch; urgency=medium
+
+  [Fixed]
+  * Un-Revert bus-width and clock rate configuration on i.MX7 platform,
+    because the emmc host is more stable and has better a response time in
+    HS200 and 4-bit bus width mode.
+
+ -- SeanHC Lin <SeanHC.Lin@moxa.com>  Thu, 07 Jul 2022 09:54:37 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa21+deb9) stretch; urgency=medium
+
+  [Fixed]
+  * Revert bus-width and clock rate configuration on i.MX7 platform, because
+    it looks not work on some devices.
+  * Do not use CMD13 to get status after speed mode switch, duo to CMD13
+    cannot be guaranteed due to the asynchronous operation.
+
+ -- Remus Wu <remusty.wu@moxa.com>  Mon, 06 Jun 2022 15:53:16 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa20+deb9) stretch; urgency=medium
+
+  [Added]
+  * Add HD44780 Character LCD driver for ls102xa because of it required by
+    DA-662C series device.
+  * Add Character LCD driver for ls102xa because of it required by DA-662C
+    series device.
+  * Add auxdisplay and keypad node to DA-662C device tree.
+  * Add its, dts, defconfig for new model: VG-100 series
+  * Add UC-3111-LX-NW device tree file and update UC-3100 series its
+    configuration to support UC-3111-LX-NW model.
+  * Add RTC ISL1208 driver for ls102xa because of it required by UC-8580
+    series device.
+
+  [Fixed]
+  * Configure bus-width as 4 bits and adjust the clock rate to HS200 to
+    avoid usdhc host tuning issue on i.mx7d platform.
+
+ -- Wes Huang <wes.huang@moxa.com>  Wed, 25 May 2022 12:44:07 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa15+deb9) stretch; urgency=medium
+
+  [Added]
+  * Add UC-2111/UC-2112 new device tree for new hardware with ICPLUS PHY.
+  * Add UC-2101/UC-2102 new device tree for new hardware with ICPLUS PHY.
+  * Add QUAL_READ support for s25fl164k.
+  * Add Quectel QMI WWAN driver V1.1.2 provided by Quectel.
+
+  [Changed]
+  * Fixed hci_uart null pointer dereference problem in uc3100 series.
+  * Enable Quectel QMI driver as a module for am335x, imx7d, ls102xa
+  * Make QMI WWAN driver for Quectel modules as an independent driver
+    due to the issue that DHCP not working under "802-3" data format.
+  * Remove QMI WWAN driver's support for Quectel modules to avoid
+    driver conflict.
+
+  [Fixed]
+  * Fix cpufreq policy not work issue on uc-3100 series.
+  * Fix root device parsing when boot from USB storage for AM335X.
+  * Duo to usdhc1 in our hardware design only support 3.3V on SD bus,
+    so set configuration 'no-1-8-v'. This change will affect UC-8200
+    series device.
+
+ -- Remus Wu <remusty.wu@moxa.com>  Thu, 31 Mar 2022 11:37:36 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa8+deb9) stretch; urgency=medium
+
+  [Added]
+  * Install new device tree on UC-8100 series.
+  * Add UC-8100 new device tree for new hardware with ICPLUS PHY.
+  * Add UC-3112-LX and UC-3122-LX configurations into its file.
+  * Add am335x-moxa-uc-3112.dts and am335x-moxa-uc-3122.dts files.
+
+  [Changed]
+  * Set mmcblk device name index fixed for AM335X.
+  * Fix issue of unexpected mmcblk index when boot from SD for AM335X.
+  * Fixed UART port number for UC-8100-ME.
+
+ -- Remus Wu <remusty.wu@moxa.com>  Tue, 15 Feb 2022 10:51:59 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa5+deb9) stretch; urgency=medium
+
+  [Added]
+  * Add CHANGELOG to record release history.
+
+ -- Remus Wu <remusty.wu@moxa.com>  Mon, 27 Dec 2021 15:00:50 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa4+deb9) stretch; urgency=medium
+
+  [Added]
+  * Add configuration for setting mmcblk device index rules.
+  * Add USB Moxa UPORT Serial Driver for AM335X.
+  * Add USB Moxa UPORT Serial Driver for LS102XA.
+
+  [Changed]
+  * Set mmcblk device name index fixed for AM335X.
+
+  [Fixed]
+  * Add Crypto Dev Linux 1.12 support for AM335X.
+  * Fix DSPI bus non-writeable issue for LS102XA.
+  * Fix DSPI device-tree configuration for UC-8540.
+  * Fix TPM device-tree configuration for UC-8540.
+
+ -- Remus Wu <remusty.wu@moxa.com>  Wed, 22 Dec 2021 19:05:39 +0800
+
+imx7-linux-4.4 (4.4.285-cip63-rt36-moxa1+deb9) stretch; urgency=medium
+
+  [Added]
+  * Add Crypto Dev Linux 1.12 support for i.MX7D.
+  * Add btrfs support for i.MX7D.
+  * Add UPort 11x0 series support for i.MX7D.
+  * Add USB Moxa UPORT Serial Driver for i.MX7D.
+  * Add 'bison', 'dh-exec', 'flex', 'libc6-dev:armhf' to build dependence.
+
+  [Changed]
+  * Enable i.MX SDMA engine as a module instead built-in for i.MX7D.
+  * Upgrade Linux Kernel version to 4.4.285-cip63-rt36.
+
+ -- Remus Wu <remusty.wu@moxa.com>  Wed, 08 Dec 2021 17:52:38 +0800
+
+imx7-linux-4.4 (4.4.176+1.1.1) stretch; urgency=medium
+
+  [Fixed]
+  * Fix CVE-2021-33909
+
+ -- Remus Wu <remusty.wu@moxa.com>  Tue, 03 Aug 2021 16:04:56 +0800
+
+imx7-linux-4.4 (4.4.176+1.1.0) stretch; urgency=medium
+
+  [Added]
+  * Support "Set DTR" request for cellular module based on MDM9230 chipset.
+
+  [Changed]
+  * Backported TPM2.0 driver from linux 4.19.115-cip24-rt9.
+  * Optimized the delay handle method of imx7d mmc bus.
+  * Optimized the initial timing sequence of PCIe host on imx7d.
+
+  [Fixed]
+  * NXP IMX7D_2N09P e10728 (PCIe PLL may fail to lock under cold temperature).
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Sun, 13 Dec 2020 22:44:06 -0500
+
+imx7-linux-4.4 (4.4.176+1.0.11) stretch; urgency=medium
+
+  * ARM: dts: imx7d: add clock-frequency to CPU nodes
+  * ARM: dts: imx7d: remove snvs_poweroff node
+  * dmaengine: imx-sdma: Add i.MX7 support
+  * ARM: dts: imx7d: Add SDMA node
+  * ARM: dts: fix imx7d boot spi dma setup error
+  * MLK-14325-2 PCI: imx: enable pcie on 4.9 kernel
+  * PCI: imx6: Add DT property for link gen, default to Gen1
+  * fix: partial sync up to source
+  * fix: dts: remove wlreg_on from UC-8210
+  * fix: dts: imx7d-moxa-uc-8220: remove property fsl,max-link-speed
+  * fix: dts: imx7d-moxa-uc-8220: add power and reset gpio for pcie
+
+ -- Remus Wu <remusty.wu@moxa.com>  Fri, 22 May 2020 02:12:27 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.10) stretch; urgency=medium
+
+  * fix: imx7d_defconfig: adjust kernel/user memory to 1G/3G
+  * debian: update build dependence
+
+ -- Remus Wu <remusty.wu@moxa.com>  Wed, 13 May 2020 14:24:48 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.9) stretch; urgency=medium
+
+  * fix: imx7d_defcong: support docker exec command
+
+ -- Remus Wu <remusty.wu@moxa.com>  Thu, 23 Apr 2020 16:44:55 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.8) stretch; urgency=medium
+
+  * defconfig: imx7d_defconfig: add pci=nomsi to cmdline
+  * fdt: fix extend of cmd line
+  * Support wifi module JWX6058 on chip QCA6174A
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Wed, 06 Nov 2019 17:49:33 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.7) stretch; urgency=medium
+
+  * fix-mmc-retune-error
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Mon, 23 Sep 2019 18:48:09 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.6) stretch; urgency=medium
+
+  * fix: debian/rules: add missing file kernel_release.h
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Fri, 12 Jul 2019 19:46:16 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.5) stretch; urgency=medium
+
+  * defconfig: enable MOXA nport driver for uc8200
+  * Add Moxa NPort Real TTY driver
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Thu, 04 Jul 2019 18:40:59 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.4) stretch; urgency=medium
+
+  * fix: remove blank line
+  * doc: add README.md
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Fri, 28 Jun 2019 14:53:17 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.3) stretch; urgency=medium
+
+  * add raw ip feature
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Thu, 27 Jun 2019 09:34:55 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.2) stretch; urgency=medium
+
+  * qmi_wwan.c: Support YUGA NC5
+
+ -- Fero JD Zhou <FeroJD.Zhou@moxa.com>  Tue, 11 Jun 2019 13:04:51 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.1) stretch; urgency=medium
+
+  * defconfig: imx7d_defconfig: adjust printk setting
+  * net: ath10k: fix poor tx performance in QCA6174 series
+  * fix: set /boot as uc8200-kernel package install folder
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Mon, 10 Jun 2019 11:58:02 +0800
+
+imx7-linux-4.4 (4.4.176+1.0.0) stretch; urgency=medium
+
+  * feat: add i.MX7 kernel packages
+  * Import CIP Linux kernel 4.4.176
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Thu, 23 May 2019 20:34:20 +0800

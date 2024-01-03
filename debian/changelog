@@ -1,3 +1,13 @@
+am335x-linux-4.4 (4.4.302-cip78-rt45-moxa5+deb9) stretch; urgency=medium
+
+  [Added]
+  * ARM: ls102xa_defconfig: add CONFIG_NETFILTER_XT_MATCH_IPVS
+  * ARM: ls102xa_defconfig: remove CONFIG_WATCHDOG_NOWAYOUT according to MIL1 spec. Users should
+  enable it in /lib/modprobe.d/watchdog.conf
+  * ARM: ls102xa_defconfig: add CONFIG_CRYPTO_RSA
+
+ -- Jason CS Chen <jasoncs.chen@moxa.com>  Wed, 20 Dec 2023 03:10:59 -0500
+
 am335x-linux-4.4 (4.4.302-cip78-rt45-moxa3+deb9) stretch; urgency=medium
 
   [Security]

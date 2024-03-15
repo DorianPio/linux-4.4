@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.4.302-cip78-rt45-moxa6] - 2024-03-15
+### Added
+* ARM: imx7d_defconfig: Change RFCOMM,BNEP,6LOWPAN protocols into modules so that users can easily customize their BT modules
+
 ## [4.4.302-cip78-rt45-moxa5] - 2023-12-15
 ### Added
 * ARM: ls102xa_defconfig: add CONFIG_CRYPTO_RSA

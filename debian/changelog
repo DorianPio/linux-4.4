@@ -1,3 +1,10 @@
+am335x-linux-4.4 (4.4.302-cip78-rt45-moxa6+deb9) stretch; urgency=medium
+
+  [Changed]
+  * imx7d_defconfig: Change RFCOMM,BNEP,6LOWPAN protocols into modules so that users can easily customize their BT modules
+
+ -- Jason CS Chen <jasoncs.chen@moxa.com>  Fri, 15 Mar 2024 04:51:08 -0400
+
 am335x-linux-4.4 (4.4.302-cip78-rt45-moxa5+deb9) stretch; urgency=medium
 
   [Added]

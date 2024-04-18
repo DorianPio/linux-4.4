@@ -24,7 +24,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                     | Kernel Source                                                             | State      |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-2100_V1.13          | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-2100_V1.14          | [4.4.302-cip78-rt45/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-2100_V1.13          | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-2100_V1.12          | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-2100_V1.11          | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-2100_V1.6           | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
@@ -37,7 +38,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                     | Kernel Source                                                             | State      |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-3100_V1.7           | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-3100_V1.8           | [4.4.302-cip78-rt45/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-3100_V1.7           | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-3100_V1.6           | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-3100_V1.5           | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-3100_V1.4           | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
@@ -50,7 +52,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                     | Kernel Source                                                             | State      |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-5100_V1.5           | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-5100_V1.6           | [4.4.302-cip78-rt45/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-5100_V1.5           | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-5100_V1.4           | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-5100_V1.2           | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
 | UC-5100_V1.1           | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
@@ -60,7 +63,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                     | Kernel Source                                                             | State      |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-8100_V3.6           | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8100_V3.7           | [4.4.302-cip78-rt45/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8100_V3.6           | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-8100_V3.5           | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-8100_V3.2           | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
 | UC-8100_V3.1           | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
@@ -70,7 +74,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                     | Kernel Source                                                             | State      |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-8100-ME_V3.2        | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8100-ME_V3.3        | [4.4.302-cip78-rt45/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8100-ME_V3.2        | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-8100-ME_V3.1        | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-8100-ME_V3.0        | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
 
@@ -78,7 +83,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                     | Kernel Source                                                             | State      |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-8100A-ME_V1.7       | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8100A-ME_V1.8       | [4.4.302-cip78-rt45/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8100A-ME_V1.7       | [4.4.302-cip70-rt40/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-8100A-ME_V1.6       | [4.4.285-cip63-rt36/stretch-am335x/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-am335x/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-8100A-ME_V1.3       | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
 | UC-8100A-ME_V1.2       | [4.4.190-cip36-rt25/stretch/master](https://github.com/Moxa-Linux/am335x-linux-4.4/tree/4.4.190-cip36-rt25/stretch/master)        | [am335x-linux-4.4](https://github.com/Moxa-Linux/am335x-linux-4.4)        | `Outdated` |
@@ -89,7 +95,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                   | Kernel Source                                                             | State      |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-8200_V1.6           | [4.4.302-cip70-rt40/stretch-imx7d/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-imx7d/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8200_V1.7           | [4.4.302-cip78-rt45/stretch-imx7d/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-imx7d/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8200_V1.6           | [4.4.302-cip70-rt40/stretch-imx7d/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-imx7d/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-8200_V1.5           | [4.4.285-cip63-rt36/stretch-imx7d/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-imx7d/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-8200_V1.4           | [4.4.285-cip63-rt36/stretch-imx7d/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-imx7d/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-8200_V1.2           | [4.4.176-cip31-rt23/stretch/master](https://github.com/Moxa-Linux/imx7-linux-4.4/tree/4.4.176-cip31-rt23/stretch/master)        | [imx7-linux-4.4](https://github.com/Moxa-Linux/imx7-linux-4.4)            | `Outdated` |
@@ -100,7 +107,8 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                       | Kernel Source                                                             | State      |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-8410A_V4.2.2        | [4.4.302-cip70-rt40/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8410A_V4.3.2        | [4.4.302-cip78-rt45/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8410A_V4.2.2        | [4.4.302-cip70-rt40/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-8410A_V4.1.2        | [4.4.285-cip63-rt36/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 | UC-8410A_V3.2          | [4.4.201-cip39-rt26/jessie/master](https://github.com/Moxa-Linux/ls1021a-linux-4.4/tree/4.4.201-cip39-rt26/jessie/master)           | [ls1021a-linux-4.4](https://github.com/Moxa-Linux/ls1021a-linux-4.4)      | `Outdated` |
 
@@ -108,14 +116,16 @@ For more information of products, refer to [Moxa Products List](https://github.c
 
 | Tag (Firmware Version) | Source Branch                                                                                                                       | Kernel Source                                                             | State      |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-8540_V2.2           | [4.4.302-cip70-rt40/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8540_V2.3           | [4.4.302-cip78-rt45/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8540_V2.2           | [4.4.302-cip70-rt40/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-8540_V2.1           | [4.4.285-cip63-rt36/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 
 ### UC-8580
 
 | Tag (Firmware Version) | Source Branch                                                                                                                       | Kernel Source                                                             | State      |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------|
-| UC-8580_V2.2           | [4.4.302-cip70-rt40/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8580_V2.3           | [4.4.302-cip78-rt45/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip78-rt45/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Latest`   |
+| UC-8580_V2.2           | [4.4.302-cip70-rt40/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.302-cip70-rt40/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated`   |
 | UC-8580_V2.1           | [4.4.285-cip63-rt36/stretch-ls102xa/master](https://github.com/Moxa-Linux/linux-4.4/tree/4.4.285-cip63-rt36/stretch-ls102xa/master) | [linux-4.4](https://github.com/Moxa-Linux/linux-4.4/) (*This repository*) | `Outdated` |
 
 ## How to build Linux 4.4 Kernel Source

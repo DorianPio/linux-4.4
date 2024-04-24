@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:bullseye
 
 RUN dpkg --add-architecture armhf
 RUN apt-get update -qqy
